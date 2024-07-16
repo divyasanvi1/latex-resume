@@ -1,0 +1,310 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% Font package that supports small caps and other font shapes
+\usepackage{lmodern}  % Example: Use Latin Modern fonts
+
+% FontAwesome package for icons
+\usepackage{fontawesome5}
+
+% Other packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Page style setup
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}  % Set a suitable fooskip length
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\ \textit{\small#3} & \textit{\small #4} \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubSubheading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textit{\small#1} & \textit{\small #2} \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Resume content
+\begin{document}
+
+% Heading
+\begin{center}
+    {\Huge \scshape \textbf{Divya Sanvi}} \\ \vspace{1pt}
+    \small +91 9799033486 $|$ \href{mailto:sanvidivya04@gmail.com}{\underline{sanvidivya04@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/divya-sanvi-ba8357262}{ \hspace{0.2em} \textcolor{blue}{\underline{LinkedIn}}} $|$ 
+    \href{https://github.com/divyasanvi1}{\faIcon{github-square} \hspace{0.2em} \textcolor{blue}{\underline{GitHub}}}
+\end{center}
+
+% Education section
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Hemvati Nandan Bahuguna Garhwal University}{7.22 CGPA}
+      {B.Tech : Computer Science and Engineering (CSE)}{Aug. 2021 -- May 2025}
+    \resumeSubheading
+      {Gyan Bharti Model Residential Complex}{}
+      {Class XII in PCM}{Aug. 2020}
+\resumeSubHeadingListEnd
+
+% Experience section
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Smart India Hackathon}{Apr. 2022 - Aug. 2022}
+      {IIT Dhanbad, Dhanbad}{}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack web application using React for tracking migrant workers}
+        \resumeItem{Explored ways to retrieve data about migrant workers across the country}
+        \resumeItem{Used SQL to retrieve data in the application}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Projects section
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Blog App} $|$ \emph{JavaScript, React, Redux, AppWrite}}{June 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack blog application using React.js for the frontend and Appwrite for the backend services}
+        \resumeItem{Key features included user authentication, post creation and editing, commenting system, and responsive design}
+        \resumeItem{Leveraged Appwrite's database, authentication, and storage capabilities to manage user sessions and data efficiently}
+        \resumeItem{Deployed the application for production, ensuring robust performance and user-friendly interface}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Recorder App} $|$ \emph{React, JavaScript, ReactMediaRecorder, MediaStreamApi, React-toastify, Material-UI}}{March 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a feature-rich screen recording application using React, incorporating video and screen capture functionalities with optional audio}
+        \resumeItem{Designed an intuitive user interface with Material-UI, managing state effectively using React hooks}
+        \resumeItem{Implemented media download capability and real-time notifications with React-toastify}
+        \resumeItem{Ensured a seamless user experience and high performance}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Task Navigator} $|$ \emph{React, JavaScript, Redux Toolkit, React-toastify, Tailwind CSS}}{Feb. 2023}
+      \resumeItemListStart
+        \resumeItem{Developed TaskNavigator, a robust To-Do application using Redux Toolkit and React}
+        \resumeItem{Key features included addition, update, deletion, status toggling, and real-time notifications with React-toastify}
+        \resumeItem{Implemented with modular components using styled-components for styling}
+        \resumeItem{Ensured a seamless user experience and high performance}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Technical skills section
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \item \textbf{Languages:} C/C++, SQL, JavaScript, Python*
+        \item \textbf{Technologies/Frameworks:} React, Node.js, Express.js, jQuery, Appwrite
+        \item \textbf{Database:} MongoDB Compass/Atlas, SQL
+        \item \textbf{Cloud:} Amazon EC2, AWS S3, AWS CloudWatch, SQS, AWS Lambda
+        \item \textbf{Developer Tools:} Git, GitHub, Amazon Web Services (AWS), VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse
+    }
+\end{itemize}
+
+% Achievements section
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={\textbullet}]
+  \item \textbf{Smart India Hackathon Finalist 2022}
+  \item \textbf{Achieved 5 star rating on Hackerank in C++ Problem Solving}
+  \item \textbf{Solved 500+ DSA problems across different platforms (LeetCode, GFG)}
+\end{itemize}
+
+%--------------------------------
+\end{document}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% Font package that supports small caps and other font shapes
+\usepackage{lmodern}  % Example: Use Latin Modern fonts
+
+% FontAwesome package for icons
+\usepackage{fontawesome5}
+
+% Other packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Page style setup
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.08003pt}  % Set a suitable fooskip length
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\ \textit{\small#3} & \textit{\small #4} \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubSubheading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textit{\small#1} & \textit{\small #2} \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\small#1 & #2 \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Resume content
+\begin{document}
+
+% Heading
+\begin{center}
+    {\Huge \scshape \textbf{Divya Sanvi}} \\ \vspace{1pt}
+    \small +91 9799033486 $|$ \href{mailto:sanvidivya04@gmail.com}{\underline{sanvidivya04@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/divya-sanvi-ba8357262}{ \hspace{0.2em} \textcolor{blue}{\underline{LinkedIn}}} $|$ 
+    \href{https://github.com/divyasanvi1}{\faIcon{github-square} \hspace{0.2em} \textcolor{blue}{\underline{GitHub}}}
+\end{center}
+
+% Education section
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Hemvati Nandan Bahuguna Garhwal University}{7.22 CGPA}
+      {B.Tech : Computer Science and Engineering (CSE)}{Aug. 2021 -- May 2025}
+    \resumeSubheading
+      {Gyan Bharti Model Residential Complex}{}
+      {Class XII in PCM}{Aug. 2020}
+\resumeSubHeadingListEnd
+
+% Experience section
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Smart India Hackathon}{Apr. 2022 - Aug. 2022}
+      {IIT Dhanbad, Dhanbad}{}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack web application using React for tracking migrant workers}
+        \resumeItem{Explored ways to retrieve data about migrant workers across the country}
+        \resumeItem{Used SQL to retrieve data in the application}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Projects section
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Blog App} $|$ \emph{JavaScript, React, Redux, AppWrite}}{June 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack blog application using React.js for the frontend and Appwrite for the backend services}
+        \resumeItem{Key features included user authentication, post creation and editing, commenting system, and responsive design}
+        \resumeItem{Leveraged Appwrite's database, authentication, and storage capabilities to manage user sessions and data efficiently}
+        \resumeItem{Deployed the application for production, ensuring robust performance and user-friendly interface}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Recorder App} $|$ \emph{React, JavaScript, ReactMediaRecorder, MediaStreamApi, React-toastify, Material-UI}}{March 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a feature-rich screen recording application using React, incorporating video and screen capture functionalities with optional audio}
+        \resumeItem{Designed an intuitive user interface with Material-UI, managing state effectively using React hooks}
+        \resumeItem{Implemented media download capability and real-time notifications with React-toastify}
+        \resumeItem{Ensured a seamless user experience and high performance}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Task Navigator} $|$ \emph{React, JavaScript, Redux Toolkit, React-toastify, Tailwind CSS}}{Feb. 2023}
+      \resumeItemListStart
+        \resumeItem{Developed TaskNavigator, a robust To-Do application using Redux Toolkit and React}
+        \resumeItem{Key features included addition, update, deletion, status toggling, and real-time notifications with React-toastify}
+        \resumeItem{Implemented with modular components using styled-components for styling}
+        \resumeItem{Ensured a seamless user experience and high performance}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Technical skills section
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \item \textbf{Languages:} C/C++, SQL, JavaScript, Python*
+        \item \textbf{Technologies/Frameworks:} React, Node.js, Express.js, jQuery, Appwrite
+        \item \textbf{Database:} MongoDB Compass/Atlas, SQL
+        \item \textbf{Cloud:} Amazon EC2, AWS S3, AWS CloudWatch, SQS, AWS Lambda
+        \item \textbf{Developer Tools:} Git, GitHub, Amazon Web Services (AWS), VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse
+    }
+\end{itemize}
+
+% Achievements section
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={\textbullet}]
+  \item \textbf{Smart India Hackathon Finalist 2022}
+  \item \textbf{Achieved 5 star rating on Hackerank in C++ Problem Solving}
+  \item \textbf{Solved 500+ DSA problems across different platforms (LeetCode, GFG)}
+\end{itemize}
+
+%--------------------------------
+\end{document}
